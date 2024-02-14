@@ -1,0 +1,29 @@
+/*Selektoren: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors*/
+h1 {
+    font-size: 30px;
+}
+/*Refenzierung von ID */
+#header {
+    font-weight: lighter;
+}
+/* Referenzierung von Klassen*/
+.container {
+    margin: 50px; /*positionieren mit Hilfe des Box-Modell, Alternativen: Flex-Box oder Grid*/
+    padding: 100px;
+    animation-duration: 20s; /*bestimmt die Dauer einer Animation in CSS*/
+    animation-name: klein; /*benennt Animation, damit sie mit Keyframes gesteuert werden kann*/
+}
+
+/* Steuert Animation über Keyframes*/
+@keyframes klein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+
